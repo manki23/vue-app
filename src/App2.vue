@@ -2,16 +2,19 @@
 <div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <myFirstComponent />
+    <Magic8Ball />
 </div>
 </template>
 
 <script>
 import myFirstComponent from "./components/myFirstComponent.vue";
+import Magic8Ball from "./components/Magic8Ball.vue";
 
 export default {
     name: "App",
     components: {
         myFirstComponent,
+        Magic8Ball,
     },
 };
 </script>
