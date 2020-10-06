@@ -10,12 +10,12 @@
 
 <script>
 export default {
-    name: "myFirstComponent",
+    name: "Magic8Ball",
     props: {},
     data() {
         return {
             title: "Magic 8 Ball",
-            options: [
+            enOptions: [
                 "As I see it, yes",
                 "Ask again later",
                 "Better not tell you now",
@@ -37,13 +37,36 @@ export default {
                 "Yes – definitely",
                 "You may rely on it",
             ],
+            frOptions: [
+                "Essaye plus tard",
+                "Essaye encore",
+                "Pas d'avis",
+                "C'est ton destin",
+                "Le sort en est jeté",
+                "Une chance sur deux",
+                "Repose ta question",
+                "D'après moi oui",
+                "C'est certain",
+                "Oui absolument",
+                "Tu peux compter dessus",
+                "Sans aucun doute",
+                "Très probable",
+                "Oui",
+                "C'est bien parti",
+                "C'est non",
+                "Peu probable",
+                "Faut pas rêver",
+                "N'y compte pas",
+                "Impossible",
+
+            ],
             answer: "Get your answer here",
         };
     },
     methods: {
         getAnswer: function () {
-            var randomOptionIndex = Math.floor(Math.random() * this.options.length);
-            this.answer = this.options[randomOptionIndex];
+            var randomOptionIndex = Math.floor(Math.random() * this.enOptions.length);
+            this.answer = this.enOptions[randomOptionIndex];
         },
     },
 };

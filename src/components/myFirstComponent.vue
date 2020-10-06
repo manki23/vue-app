@@ -1,7 +1,7 @@
 <template>
 <div class="hello">
     <h1>{{ title }}</h1>
-    <button v-on:click="getAnswer">Go</button>
+    <button v-on:click="getAnswer">Yes or No ?</button>
     <p>
         {{ answer }}
     </p>

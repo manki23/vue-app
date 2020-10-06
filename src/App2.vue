@@ -1,6 +1,6 @@
 <template>
 <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <HeaderComponent />
     <myFirstComponent />
     <Magic8Ball />
 </div>
@@ -9,12 +9,14 @@
 <script>
 import myFirstComponent from "./components/myFirstComponent.vue";
 import Magic8Ball from "./components/Magic8Ball.vue";
+import HeaderComponent from "./components/HeaderComponent.vue";
 
 export default {
     name: "App",
     components: {
         myFirstComponent,
         Magic8Ball,
+        HeaderComponent,
     },
 };
 </script>
